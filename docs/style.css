@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 :root {
   --bg-color: #121212;
@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   background: var(--bg-color);
   color: var(--text-color);
 }
@@ -57,6 +57,13 @@ body {
   font-size: 1.2rem;
 }
 
+.socials img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 .socials a:hover {
   opacity: 0.8;
 }
@@ -83,12 +90,53 @@ body {
   border-top-right-radius: 8px;
 }
 
-.content section {
-background: var(--card-bg);
-padding: 2rem;
-border-radius: 8px;
-margin-bottom: 2rem;
-margin-top: 120px; /* Pushes the section lower to avoid cover image overlap */
+
+.main-content-with-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.main-content-with-gallery section {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-top: 220px; /* Pushes the section lower to avoid cover image overlap */
+  width: 450px;
+  flex-shrink: 0;
+}
+
+.gallery {
+  margin-top: 220px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .content h2 {
@@ -97,7 +145,7 @@ margin-top: 120px; /* Pushes the section lower to avoid cover image overlap */
 }
 
 .intro {
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .skill {
