@@ -64,13 +64,31 @@ body {
 .content {
   flex: 1;
   padding: 3rem;
+  background: none;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 260px; /* Banner height */
+  background: url('../img/Cover.png') center top/cover no-repeat, rgba(18, 18, 18, 0.7);
+  z-index: -1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .content section {
-  background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+background: var(--card-bg);
+padding: 2rem;
+border-radius: 8px;
+margin-bottom: 2rem;
+margin-top: 120px; /* Pushes the section lower to avoid cover image overlap */
 }
 
 .content h2 {
@@ -126,3 +144,53 @@ a:hover {
     padding: 2rem 1rem;
   }
 }
+
+.sidebar-skills {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.sidebar-skills h2 {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-skills .skill {
+  margin-bottom: 1rem;
+}
+
+.sidebar-skills .skill p {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+}
+
+.sidebar-skills .skill-bar {
+  background: #333;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.sidebar-skills .skill-level {
+  background: var(--accent-color);
+  height: 100%;
+}
+
+.cover-image {
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
