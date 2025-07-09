@@ -9,66 +9,50 @@
 <body>
   <div class="container">
     <aside class="sidebar">
-      <img src="img/profile.jpg" alt="Héctor Esmoar" class="profile-pic"/>
-      <h1>Héctor Esmoar 🌎</h1>
-      <p>Production | Pipeline Dev | Compositing Artist</p>
-
-      <div class="socials">
-        <a href="mailto:hector.esmoar@gmail.com">✉️</a>
-        <a href="https://www.linkedin.com/in/hesmoar/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" /></a>
-        <a href="artstation">:dead:</a>
-      </div>
-
-      <!-- 👇 Moved Skills inside Sidebar -->
-      <div class="sidebar-skills">
-        <h2>Skills</h2>
-        <div class="skill">
-          <p>Production Management</p>
-          <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
-        </div>
-        <div class="skill">
-          <p>Scheduling & Budgeting</p>
-          <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-        </div>
-        <div class="skill">
-          <p>Pipeline Development</p>
-          <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-        </div>
-      </div>
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
     </aside>
 
     <main class="content">
-      <div class="main-content-with-gallery">
-        <section>
+      <div class="center-card">
+        <img src="img/profile.jpg" alt="Héctor Esmoar" class="profile-pic"/>
+        <h1>Héctor Esmoar <span title="Available worldwide">
+          <img src="img/mexFlag.png" class="mexFlagIcon"><img src="img/canFlag.png" class="canFlagIcon">🌎</span></h1>
+        <p class="subtitle">Production Management | Pipeline Dev | Compositing Artist</p>
+        <div class="main-links">
+          <a href="mailto:hector.esmoar@gmail.com" title="Email"> <img src="img/emailLogo.png" class="icon-link"></a>
+          <a href="https://www.linkedin.com/in/hesmoar/" target="_blank" title="LinkedIn"><img src="img/linkedinLogo.png" alt="LinkedIn" class="icon-link"/></a>
+          <a href="https://www.artstation.com/hecberry" title="ArtStation"><img src="img/artStation.png" alt="ArtStation" class="icon-link"/></a>
+        </div>
+        <div class="about">
           <h2>About me</h2>
-          <p class="intro">
+          <p>
             Problem-solving and goal-oriented Producer with a versatile skill set, bringing a unique perspective gained from experience across Pipeline/IT, Production, and Artist levels. With hands-on expertise in production management, compositing, and editing, I am always looking to promote a safe and healthy environment for the studio and the artists.
           </p>
-          <p class="intro">
+          <p>
             Reliable and adaptable, I have a proven track record of successful collaboration with artist teams and technicians across various disciplines, both on a project and studio level. I also have experience using Python to optimize workflows, enhancing productivity and efficiency within the team.
           </p>
-          <p class="intro">
+          <p>
             I am always looking for new opportunities to grow, collaborate with creative teams, and contribute to innovative projects that push the boundaries of storytelling and production.
           </p>
-        </section>
-        <aside class="gallery">
-          <h2>Gallery</h2>
-          <div class="gallery-grid">
-            <img src="img/DFB.png" alt="Firebuds">
-            <img src="img/FZS.PNG" alt="Friendzspace">
-            <img src="img/MGDD.png" alt="Moongirl and Devil Dinosaur">
-            <img src="img/PICT.png" alt="Pictoline">
-            <img src="img/RMY.png" alt="Rey Misterio">
-            <img src="img/POLLY2.PNG" alt="Polly Pocket">
-            <img src="img/DDM.PNG" alt="Salmas big wish">
-            <img src="img/NOTAD.PNG" alt="Night of the animated dead">
-            
-            
-            
-          </div>
-        </aside>
+        </div>
       </div>
     </main>
+  </div>
+  <div class="bg-video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/yBeBLx-eEtY?autoplay=1&mute=1&controls=0&loop=1&playlist=yBeBLx-eEtY&modestbranding=1&showinfo=0"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      id="bg-video-iframe"
+    ></iframe>
   </div>
 </body>
 </html>
