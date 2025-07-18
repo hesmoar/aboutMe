@@ -4,9 +4,10 @@
   --bg-color: #121212;
   --sidebar-bg: #282925;
   --text-color: #ECDFCC;
-  /*--accent-color: #00bcd4;*/
-  --accent-color: #ECDFCC;
-  --card-bg: #3C3D37;
+  /*--accent-color: #00bcd4;
+  --accent-color: #ECDFCC;*/
+  --accent-color: #68A357;
+  --card-bg: #23251b;
 }
 
 body {
