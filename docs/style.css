@@ -204,7 +204,7 @@ body {
 }
 
 .caption-title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
   display: block;
@@ -213,7 +213,7 @@ body {
 .caption-role {
   font-weight: 400;
   display: block;
-  font-size: 1rem;
+  font-size: .8rem;
   opacity: 1;
   text-align: center;
   margin-top: 0;
@@ -246,8 +246,8 @@ body {
 .client-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  max-width: 900px;
+  gap: 2rem;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -256,7 +256,7 @@ body {
   aspect-ratio: 1/1;
   object-fit: contain;
   border-radius: 8px;
-  background: #222;
+  /*background: #222;*/
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
 }
