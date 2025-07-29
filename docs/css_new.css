@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+/* Header Navigation */
+header {
+  background: #000;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Intro Section */
+#intro {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+}
+
+.profile-pic {
+  flex: 1;
+  max-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+.role {
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Latest Work Grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.work-item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2rem 0;
+}
