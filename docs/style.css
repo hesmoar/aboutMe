@@ -1,6 +1,6 @@
 /* ---- Import & Variables ---- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 :root {
   --bg-color: #121212;
   --sidebar-bg: #282925;
@@ -12,7 +12,8 @@
 /* ---- Base Styles ---- */
 body {
   margin: 0;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  /*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
+  font-family: 'Nunito', sans-serif;
   background: var(--bg-color);
   color: var(--text-color);
 }
@@ -25,7 +26,7 @@ body {
 /* ---- Sidebar ---- */
 .sidebar {
   background: var(--sidebar-bg);
-  width: 220px;
+  width: 280px;
   padding: 2rem 1rem;
   text-align: left;
   display: flex;
@@ -57,6 +58,43 @@ body {
   color: #fff;
 }
 
+.side-card .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--accent-color);
+  margin-left: 35px;
+}
+
+.side-card .subtitle {
+  color: var(--accent-color);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: .9rem;
+}
+.side-card .location-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.side-card .mexFlagIcon,
+.side-card .canFlagIcon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: .2rem;
+  horizontal-align: middle;
+}
+
+.side-card h1 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
 /* ---- Main Card (About/Home) ---- */
 .center-card {
   margin: 60px auto 0 auto;
@@ -70,6 +108,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .center-card .profile-pic {
   width: 200px;
   height: 200px;
@@ -98,7 +137,7 @@ body {
 }
 .main-links {
   display: flex;
-  gap: 1.2rem;
+  gap: .2rem;
   margin-bottom: 1.5rem;
   align-items: flex-end;
 }
@@ -399,4 +438,3 @@ body {
     padding: 1rem;
   }
 }
-
