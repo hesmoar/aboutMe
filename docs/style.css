@@ -23,6 +23,25 @@ body {
   min-height: 100vh;
 }
 
+/* Header Navigation */
+header {
+  background: #000;
+  padding: .35rem 0;
+  margin-bottom: 0px;
+
+}
+.header-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  }
+  
+.header-element{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
 /* ---- Sidebar ---- */
 .sidebar {
   background: var(--sidebar-bg);
@@ -328,12 +347,28 @@ body {
 }
 
 /* ---- Client Gallery ---- */
+
+.clients-section {
+  background: #222;
+  border-radius: 1;
+
+}
+
 .client-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 2rem;
   max-width: 700px;
   margin: 0 auto;
+}
+
+.clients-section .sub-client-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 700px;
+  margin: 1 auto;
+  margin-top: 10px;
 }
 
 .client-img {
@@ -426,6 +461,17 @@ body {
   background: #4e7c3a;
 }
 
+/* ---- Particles bg ---- */
+
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0; left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* ---- Background Video ---- */
 .bg-video-wrapper {
   position: fixed;
@@ -467,3 +513,4 @@ body {
     padding: 1rem;
   }
 }
+

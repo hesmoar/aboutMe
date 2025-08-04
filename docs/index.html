@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div id="particles-js"></div>
+  <div>
+    <header>
+      <nav>
+        <ul class="header-list">
+          <li class="header-element"><a href="index.html">about</a></li>
+          <li class="header-element"><a href="cv.html">CV</a></li>
+          <li class="header-element"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <div class="container">
     <aside class="sidebar">
       <nav class="sidebar-menu">
@@ -23,11 +35,6 @@
             <a href="https://github.com/hesmoar" target="_blank" title="GitHub"><img src="img/github_handDrawn_semiBG.png" alt="GitHub" class="icon-link"/></a>
             <a href="https://www.artstation.com/hecberry" title="ArtStation"><img src="img/artStation_handDrawn_semiBG.png" alt="ArtStation" class="icon-link"/></a>
           </div>
-        <ul>
-          <li><a href="projects.html">View Projects</a></li>
-          <li><a href="contact.html">Get in touch</a></li>
-          <li><a href="cv.html">My CV</a></li>
-        </ul>
       </nav>
     </aside>
 
@@ -142,6 +149,22 @@
             </div>
           </div>
         </div>
+        </div>
+      </div>
+      <div class="clients-section">
+        <h1 style="text-align:center; margin-top:.5rem; color:var(--accent-color);">Who I worked with</h1>
+        <div class="client-gallery-grid" style="max-width:900px; margin:0 auto;">
+          <img src="img/logos/Meta_logo.png" alt="Metacube" class="client-img">
+          <img src="img/logos/Demente_logo.png" alt="Demente" class="client-img">
+          <img src="img/logos/mighty_logo.png" alt="Mighty" class="client-img">
+          <img src="img/logos/ICON_logo.png" alt="icon" class="client-img">
+        </div>
+        <div class="sub-client-gallery-grid" style="max-width:900px; margin:0 auto;">
+          <img src="img/logos/flyingBark_logo.png" alt="FlyingBark" class="client-img">
+          <img src="img/logos/pictoline_logo.png" alt="Pictoline" class="client-img">
+          <img src="img/logos/disneyjr_logo.png" alt="DisneyJr" class="client-img">
+          <img src="img/logos/nick_logo.png" alt="Nick" class="client-img">
+          <img src="img/logos/titmouse_logo.png" alt="Titmouse" class="client-img">
       </div>
     </main>
   </div>
@@ -154,5 +177,11 @@
       id="bg-video-iframe"
     ></iframe>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particlesjs-config1.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
 </body>
 </html>
